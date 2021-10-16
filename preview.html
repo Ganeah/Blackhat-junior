@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Preview of link
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <p>Your link is: </p>
+        <button onclick="link()">Preview your link on roblox</button>        
+        <button onclick="back()">Back</button>
+    </body>
+    <script>
+        function link(){
+            var get_link = localStorage.getItem("link");
+            window.location.href = get_link;
+        }        
+        function back(){            
+            window.location = "join.html";
+        }
+    </script>
+    <style>
+        body{
+            background-color: aqua;
+            color: green;
+            font-size: 30px;
+        }
+    </style>
+</html>

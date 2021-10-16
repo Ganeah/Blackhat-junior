@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Hackathon
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to our Hackathon</h1>
+        <p>This Hackathon is related to an app called "Roblox studio" which creates apps please follow the instructions</p>
+        <p>In this hackathon we will create a corrupted world</p>
+        <p>Install roblox studio in your computer using this link also please sign for roblox in your computer because it is related to the app: <a href="https://web.roblox.com/create"></a></p>
+        <p>Now sign for roblox studio "not roblox now"</p>
+        <p>After signing up for roblox studio click any template you want(Example: city,baseplate etc)</p>
+        <p>Now find the option paint by clicking edit tab like this</p>
+        <img src="Capture.JPG">
+        <p>Then click water like this</p>
+        <img src="Capture1.JPG">
+        <p>Also use city for best corruption using water</p>
+        <p>Then click sea level then scroll down and click create</p>
+        <p>Then after clicking create click evaporate and every thing will be corrupted</p>
+        <p>After this click Game setting go to permissions then click public and click save</p>
+        <p>After doing this send your link down here</p>
+        <input type="text" placeholder="Give your link here" id="link" class="form_control">
+        <p>Also make sure you play your own game and save this in your downloads if not just click file and click save or click save as and it will be saved in your desired place also it will be saved in the app itself in case if you don't know where your file is like this:</p>
+        <img src="Capture3.JPG">
+        <button onclick="preview()" class="btn btn-warning">Preview</button>
+    </body>
+    <script>
+        function preview(){
+            link = document.getElementById("link").value;
+            localStorage.setItem("link",link);
+            window.location = "preview.html";
+        }
+    </script>
+    <style>
+        body{
+            font-size: 30px;
+            background-color: aqua;
+            color: green;
+        }
+    </style>
+</html>
